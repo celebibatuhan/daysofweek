@@ -22,6 +22,8 @@ namespace daysofweek
             int trabzonIndex = countries.FindIndex(x=>x.Population < 2_000_000);
             countries.Insert(trabzonIndex, trabzon);
             countries.RemoveAt(trabzonIndex);
+            
+            
             Console.WriteLine($"Enter country name: ");
             string ulke = Console.ReadLine();
             Console.WriteLine($"Enter country code: ");
